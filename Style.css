@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    place-content: center;
+    
+}
+
+.container{
+    height: 150px;
+    width: 600px;
+    margin-left: 33%;
+    background-color: rgba(13, 14, 14, 0.893);
+    border: 2px solid greenyellow;
+}
+.Clock{
+    height:100%;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    font-size: 30px;
+    color: rgb(5, 246, 98);
+}
+.Clock span{
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;    
+}
+
+.Clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#hr::after{
+    content: 'HOURS';
+   
+}
+#min::after{
+    content: 'MINS';
+}
+#sec::after{
+    content: 'SEC';
+}
